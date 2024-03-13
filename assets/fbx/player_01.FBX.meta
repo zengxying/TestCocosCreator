@@ -1,0 +1,456 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb",
+    "__original-animation-2.cconb",
+    "__original-animation-3.cconb",
+    "__original-animation-4.cconb",
+    "__original-animation-5.cconb",
+    "__original-animation-6.cconb",
+    "__original-animation-7.cconb",
+    "__original-animation-8.cconb",
+    "__original-animation-9.cconb"
+  ],
+  "subMetas": {
+    "44982": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@44982",
+      "displayName": "",
+      "id": "44982",
+      "name": "PawnTeleport.animation",
+      "userData": {
+        "gltfIndex": 9,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9279a": {
+      "importer": "gltf-mesh",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@9279a",
+      "displayName": "",
+      "id": "9279a",
+      "name": "StickMan.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "330f3": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@330f3",
+      "displayName": "",
+      "id": "330f3",
+      "name": "PawnIdle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8999999761581421
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9065f": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@9065f",
+      "displayName": "",
+      "id": "9065f",
+      "name": "PawnRun.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8999999761581421
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f12c1": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@f12c1",
+      "displayName": "",
+      "id": "f12c1",
+      "name": "PawnSwimIdle.animation",
+      "userData": {
+        "gltfIndex": 2,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "ebc9f": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@ebc9f",
+      "displayName": "",
+      "id": "ebc9f",
+      "name": "PawnSwim.animation",
+      "userData": {
+        "gltfIndex": 3,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "14d01": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@14d01",
+      "displayName": "",
+      "id": "14d01",
+      "name": "PawnDamage.animation",
+      "userData": {
+        "gltfIndex": 4,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "78e5c": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@78e5c",
+      "displayName": "",
+      "id": "78e5c",
+      "name": "PawnCarryingIdle.animation",
+      "userData": {
+        "gltfIndex": 5,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "71b01": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@71b01",
+      "displayName": "",
+      "id": "71b01",
+      "name": "PawnCarrying.animation",
+      "userData": {
+        "gltfIndex": 6,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2ffa6": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@2ffa6",
+      "displayName": "",
+      "id": "2ffa6",
+      "name": "PawnSleeping.animation",
+      "userData": {
+        "gltfIndex": 7,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4.9666666984558105
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "697a3": {
+      "importer": "gltf-animation",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@697a3",
+      "displayName": "",
+      "id": "697a3",
+      "name": "PawnChop.animation",
+      "userData": {
+        "gltfIndex": 8,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4.9666666984558105
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 24
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c0b8f": {
+      "importer": "gltf-scene",
+      "uuid": "e9509933-4d49-4ca2-9793-ed14d5a70b56@c0b8f",
+      "displayName": "",
+      "id": "c0b8f",
+      "name": "player_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "PawnIdle",
+        "duration": 0.8999999761581421,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnIdle",
+            "from": 0,
+            "to": 0.8999999761581421,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnRun",
+        "duration": 0.8999999761581421,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnRun",
+            "from": 0,
+            "to": 0.8999999761581421,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSwimIdle",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSwimIdle",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSwim",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSwim",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnDamage",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnDamage",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnCarryingIdle",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnCarryingIdle",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnCarrying",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnCarrying",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSleeping",
+        "duration": 4.9666666984558105,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSleeping",
+            "from": 0,
+            "to": 4.9666666984558105,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnChop",
+        "duration": 4.9666666984558105,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnChop",
+            "from": 0,
+            "to": 4.9666666984558105,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnTeleport",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnTeleport",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "e9509933-4d49-4ca2-9793-ed14d5a70b56@c0b8f",
+    "assetFinder": {
+      "meshes": [
+        "e9509933-4d49-4ca2-9793-ed14d5a70b56@9279a"
+      ],
+      "skeletons": [
+        "e9509933-4d49-4ca2-9793-ed14d5a70b56@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "9ca6eb4a-bb0d-42b5-93cb-63b560822fdd"
+      ],
+      "scenes": [
+        "e9509933-4d49-4ca2-9793-ed14d5a70b56@c0b8f"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/fbx/materials"
+  }
+}

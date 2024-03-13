@@ -1,0 +1,389 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb",
+    "__original-animation-2.cconb"
+  ],
+  "subMetas": {
+    "65181": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@65181",
+      "displayName": "",
+      "id": "65181",
+      "name": "RedOakTree (2).mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fc388": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@fc388",
+      "displayName": "",
+      "id": "fc388",
+      "name": "RedOakTree.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "71c66": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@71c66",
+      "displayName": "",
+      "id": "71c66",
+      "name": "RedOakTree (1).mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2c6e3": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@2c6e3",
+      "displayName": "",
+      "id": "2c6e3",
+      "name": "RedOakTree (3).mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f0be7": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@f0be7",
+      "displayName": "",
+      "id": "f0be7",
+      "name": "RedOakTree (4).mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1b0f0": {
+      "importer": "gltf-mesh",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@1b0f0",
+      "displayName": "",
+      "id": "1b0f0",
+      "name": "RedOakTree (5).mesh",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ec9ae": {
+      "importer": "gltf-animation",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@ec9ae",
+      "displayName": "",
+      "id": "ec9ae",
+      "name": "TreeIdle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a1d2d": {
+      "importer": "gltf-animation",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@a1d2d",
+      "displayName": "",
+      "id": "a1d2d",
+      "name": "TreeHit.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "8559c": {
+      "importer": "gltf-animation",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@8559c",
+      "displayName": "",
+      "id": "8559c",
+      "name": "TreeGrow.animation",
+      "userData": {
+        "gltfIndex": 2,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "929f8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@929f8",
+      "displayName": "",
+      "id": "929f8",
+      "name": "BasicEnviro.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e35d9": {
+      "importer": "texture",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@e35d9",
+      "displayName": "",
+      "id": "e35d9",
+      "name": "BasicEnviro.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@929f8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "71c56": {
+      "importer": "gltf-scene",
+      "uuid": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@71c56",
+      "displayName": "",
+      "id": "71c56",
+      "name": "ResourceRedOakTree.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "BasicEnviro.png",
+        "uri": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@929f8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "TreeIdle",
+        "duration": 4,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "TreeIdle",
+            "from": 0,
+            "to": 4,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "TreeHit",
+        "duration": 4,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "TreeHit",
+            "from": 0,
+            "to": 4,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "TreeGrow",
+        "duration": 4,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "TreeGrow",
+            "from": 0,
+            "to": 4,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@71c56",
+    "assetFinder": {
+      "meshes": [
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@fc388",
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@71c66",
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@65181",
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@2c6e3",
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@f0be7",
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@1b0f0"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@e35d9"
+      ],
+      "materials": [
+        "62e3c43b-6de7-40f3-ab3e-0d16564bb7e7"
+      ],
+      "scenes": [
+        "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@71c56"
+      ]
+    },
+    "materials": {
+      "d03926ba-6f89-4593-9aa4-a08d4df8ab7d@8e31b": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 105,
+              "g": 105,
+              "b": 105,
+              "a": 255
+            },
+            "shininessExponent": 20,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 124,
+              "g": 124,
+              "b": 124,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/fbx/materials"
+  }
+}

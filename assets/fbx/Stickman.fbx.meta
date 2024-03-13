@@ -1,0 +1,589 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb",
+    "__original-animation-2.cconb",
+    "__original-animation-3.cconb",
+    "__original-animation-4.cconb",
+    "__original-animation-5.cconb",
+    "__original-animation-6.cconb",
+    "__original-animation-7.cconb",
+    "__original-animation-8.cconb",
+    "__original-animation-9.cconb"
+  ],
+  "subMetas": {
+    "44982": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@44982",
+      "displayName": "",
+      "id": "44982",
+      "name": "PawnTeleport.animation",
+      "userData": {
+        "gltfIndex": 9,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9279a": {
+      "importer": "gltf-mesh",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@9279a",
+      "displayName": "",
+      "id": "9279a",
+      "name": "StickMan.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "330f3": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@330f3",
+      "displayName": "",
+      "id": "330f3",
+      "name": "PawnIdle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8999999761581421
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9065f": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@9065f",
+      "displayName": "",
+      "id": "9065f",
+      "name": "PawnRun.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8999999761581421
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f12c1": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@f12c1",
+      "displayName": "",
+      "id": "f12c1",
+      "name": "PawnSwimIdle.animation",
+      "userData": {
+        "gltfIndex": 2,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "ebc9f": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@ebc9f",
+      "displayName": "",
+      "id": "ebc9f",
+      "name": "PawnSwim.animation",
+      "userData": {
+        "gltfIndex": 3,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "14d01": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@14d01",
+      "displayName": "",
+      "id": "14d01",
+      "name": "PawnDamage.animation",
+      "userData": {
+        "gltfIndex": 4,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "78e5c": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@78e5c",
+      "displayName": "",
+      "id": "78e5c",
+      "name": "PawnCarryingIdle.animation",
+      "userData": {
+        "gltfIndex": 5,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "71b01": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@71b01",
+      "displayName": "",
+      "id": "71b01",
+      "name": "PawnCarrying.animation",
+      "userData": {
+        "gltfIndex": 6,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.7333333492279053
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2ffa6": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@2ffa6",
+      "displayName": "",
+      "id": "2ffa6",
+      "name": "PawnSleeping.animation",
+      "userData": {
+        "gltfIndex": 7,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4.9666666984558105
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "697a3": {
+      "importer": "gltf-animation",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@697a3",
+      "displayName": "",
+      "id": "697a3",
+      "name": "PawnChop.animation",
+      "userData": {
+        "gltfIndex": 8,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 4.9666666984558105
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 24
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "929f8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@929f8",
+      "displayName": "",
+      "id": "929f8",
+      "name": "BasicEnviro.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e35d9": {
+      "importer": "texture",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@e35d9",
+      "displayName": "",
+      "id": "e35d9",
+      "name": "BasicEnviro.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@929f8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3f1dc": {
+      "importer": "gltf-scene",
+      "uuid": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@3f1dc",
+      "displayName": "",
+      "id": "3f1dc",
+      "name": "Stickman.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "BasicEnviro.png",
+        "uri": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@929f8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "PawnIdle",
+        "duration": 0.8999999761581421,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnIdle",
+            "from": 0,
+            "to": 0.8999999761581421,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnRun",
+        "duration": 0.8999999761581421,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnRun",
+            "from": 0,
+            "to": 0.8999999761581421,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSwimIdle",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSwimIdle",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSwim",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSwim",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnDamage",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnDamage",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnCarryingIdle",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnCarryingIdle",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnCarrying",
+        "duration": 1.7333333492279053,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnCarrying",
+            "from": 0,
+            "to": 1.7333333492279053,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnSleeping",
+        "duration": 4.9666666984558105,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnSleeping",
+            "from": 0,
+            "to": 4.9666666984558105,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnChop",
+        "duration": 4.9666666984558105,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnChop",
+            "from": 0,
+            "to": 4.9666666984558105,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "PawnTeleport",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "PawnTeleport",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "6ad13312-9fcc-4338-9f99-f4ccca42a99e@3f1dc",
+    "assetFinder": {
+      "meshes": [
+        "6ad13312-9fcc-4338-9f99-f4ccca42a99e@9279a"
+      ],
+      "skeletons": [
+        "6ad13312-9fcc-4338-9f99-f4ccca42a99e@438fe"
+      ],
+      "textures": [
+        "6ad13312-9fcc-4338-9f99-f4ccca42a99e@e35d9"
+      ],
+      "materials": [
+        "62e3c43b-6de7-40f3-ab3e-0d16564bb7e7"
+      ],
+      "scenes": [
+        "6ad13312-9fcc-4338-9f99-f4ccca42a99e@3f1dc"
+      ]
+    },
+    "materials": {
+      "6ad13312-9fcc-4338-9f99-f4ccca42a99e@8e31b": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 105,
+              "g": 105,
+              "b": 105,
+              "a": 255
+            },
+            "shininessExponentMap": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "shininessExponent": 20,
+            "specularGlossinessMap": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 124,
+              "g": 124,
+              "b": 124,
+              "a": 255
+            },
+            "specularMap": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/fbx/materials"
+  }
+}

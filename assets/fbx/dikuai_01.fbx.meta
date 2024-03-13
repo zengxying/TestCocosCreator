@@ -1,0 +1,62 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "eecc8b43-7059-4e91-90c3-344d2aa19c21",
+  "files": [],
+  "subMetas": {
+    "1a5d9": {
+      "importer": "gltf-mesh",
+      "uuid": "eecc8b43-7059-4e91-90c3-344d2aa19c21@1a5d9",
+      "displayName": "",
+      "id": "1a5d9",
+      "name": "dikuai_01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4171e": {
+      "importer": "gltf-scene",
+      "uuid": "eecc8b43-7059-4e91-90c3-344d2aa19c21@4171e",
+      "displayName": "",
+      "id": "4171e",
+      "name": "dikuai_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "eecc8b43-7059-4e91-90c3-344d2aa19c21@4171e",
+    "assetFinder": {
+      "meshes": [
+        "eecc8b43-7059-4e91-90c3-344d2aa19c21@1a5d9"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "eecc8b43-7059-4e91-90c3-344d2aa19c21@4171e"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/fbx/materials"
+  }
+}

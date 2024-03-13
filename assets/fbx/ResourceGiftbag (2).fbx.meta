@@ -1,0 +1,425 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "99755b1f-aa4d-46b3-9447-471650effffe",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb"
+  ],
+  "subMetas": {
+    "6d9de": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@6d9de",
+      "displayName": "",
+      "id": "6d9de",
+      "name": "GiftBag.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e4f6b": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@e4f6b",
+      "displayName": "",
+      "id": "e4f6b",
+      "name": "GiftBag.001.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "64b8b": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@64b8b",
+      "displayName": "",
+      "id": "64b8b",
+      "name": "GiftBag.002.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cc0e5": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@cc0e5",
+      "displayName": "",
+      "id": "cc0e5",
+      "name": "GiftBag.003.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4116": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@d4116",
+      "displayName": "",
+      "id": "d4116",
+      "name": "GiftBag.004.mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "678ba": {
+      "importer": "gltf-mesh",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@678ba",
+      "displayName": "",
+      "id": "678ba",
+      "name": "GiftBag.005.mesh",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d3b14": {
+      "importer": "gltf-animation",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@d3b14",
+      "displayName": "",
+      "id": "d3b14",
+      "name": "RockHit.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.1666666716337204
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "3a380": {
+      "importer": "gltf-animation",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@3a380",
+      "displayName": "",
+      "id": "3a380",
+      "name": "RockGrow.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8333333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "929f8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@929f8",
+      "displayName": "",
+      "id": "929f8",
+      "name": "BasicEnviro.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e35d9": {
+      "importer": "texture",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@e35d9",
+      "displayName": "",
+      "id": "e35d9",
+      "name": "BasicEnviro.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "99755b1f-aa4d-46b3-9447-471650effffe@929f8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "471e8": {
+      "importer": "gltf-scene",
+      "uuid": "99755b1f-aa4d-46b3-9447-471650effffe@471e8",
+      "displayName": "",
+      "id": "471e8",
+      "name": "ResourceGiftbag (2).prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "BasicEnviro.png",
+        "uri": "99755b1f-aa4d-46b3-9447-471650effffe@929f8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "RockHit",
+        "duration": 0.1666666716337204,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RockHit",
+            "from": 0,
+            "to": 0.1666666716337204,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RockGrow",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RockGrow",
+            "from": 0,
+            "to": 0.8333333134651184,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "99755b1f-aa4d-46b3-9447-471650effffe@471e8",
+    "assetFinder": {
+      "meshes": [
+        "99755b1f-aa4d-46b3-9447-471650effffe@6d9de",
+        "99755b1f-aa4d-46b3-9447-471650effffe@e4f6b",
+        "99755b1f-aa4d-46b3-9447-471650effffe@64b8b",
+        "99755b1f-aa4d-46b3-9447-471650effffe@cc0e5",
+        "99755b1f-aa4d-46b3-9447-471650effffe@d4116",
+        "99755b1f-aa4d-46b3-9447-471650effffe@678ba"
+      ],
+      "skeletons": [],
+      "textures": [
+        "99755b1f-aa4d-46b3-9447-471650effffe@e35d9"
+      ],
+      "materials": [
+        "333a8a8b-a0de-436a-83a9-85b7be19ba65",
+        "1d5e29ab-9fe3-4a47-8e36-0098f746b482"
+      ],
+      "scenes": [
+        "99755b1f-aa4d-46b3-9447-471650effffe@471e8"
+      ]
+    },
+    "materials": {
+      "99755b1f-aa4d-46b3-9447-471650effffe@cbd47": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 105,
+              "g": 105,
+              "b": 105,
+              "a": 255
+            },
+            "shininessExponent": 20,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 124,
+              "g": 124,
+              "b": 124,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      "99755b1f-aa4d-46b3-9447-471650effffe@edf5e": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "11068811-106c-4f66-aa37-ef77206becf7@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 105,
+              "g": 105,
+              "b": 105,
+              "a": 255
+            },
+            "shininessExponent": 20,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 124,
+              "g": 124,
+              "b": 124,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/fbx/materials"
+  }
+}

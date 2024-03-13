@@ -23,7 +23,7 @@ export class StaticBatch extends Component {
             //@ts-ignore
             window.testBatchingFunc();
         }
-        this.node.active = false;
+        // this.node.active = false;
     }
 
     update(deltaTime: number) {
