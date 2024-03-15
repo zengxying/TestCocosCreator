@@ -191,9 +191,9 @@ export const roundboxAssemble: IAssembler = {
         dataList[9].x = right_r;
         dataList[9].y = sprite.rightTop ? top_r : t;
         dataList[10].x = r;
-        dataList[10].x = sprite.rightTop ? top_r : t;
+        dataList[10].y = sprite.rightTop ? top_r : t;
         dataList[11].x = r;
-        dataList[11].x = sprite.rightBottom ? bottom_r : b;
+        dataList[11].y = sprite.rightBottom ? bottom_r : b;
 
         const segments = sprite.segments;
         var vertexCountIdx = 12;
@@ -223,41 +223,36 @@ export const roundboxAssemble: IAssembler = {
     },
 
 
-    getVertexIb(com: RoundBox) {
+    getVertexIb(sprite: RoundBox) {
 
-        var baseIbArr = [ // 三个矩形的顶点索引
+        let indexBuffer = [
             0, 1, 2, 2, 3, 0,
             4, 5, 6, 6, 7, 4,
             8, 9, 10, 10, 11, 8
-        ];
+        ]
 
-        const segments = com.segments;
-        var vertexIdx = 12;
-        function getVertexIbByFan(centerIdx: number, startIdx: number, endIdx: number) {
-            var cur = vertexIdx;
-            var last = startIdx;
-            for (let index = 0; index < segments - 1; index++) {
-                cur = vertexIdx;
-                vertexIdx++;
-                baseIbArr.push(centerIdx, cur, last);
-                last = vertexIdx;
+        // 为四个角的扇形push进索引值
+        let index = 12
+        let fanIndexBuild = function(center, start, end) {
+            let last = start;
+            for (let i = 0; i < sprite.segments - 1; i++) {
+                // 左上角 p2为扇形圆心，p1/p5为两个边界
+                let cur = index;
+                index++;
+                indexBuffer.push(center, last, cur);
+                last = cur;
             }
-            baseIbArr.push(centerIdx, last, endIdx);
+            indexBuffer.push(center, last, end)
         }
-
-        if (com.leftBottom) {
-            getVertexIbByFan(3, 4, 0);
-        }
-        if (com.leftTop) {
-            getVertexIbByFan(2, 1, 5);
-        }
-        if (com.rightTop) {
-            getVertexIbByFan(9, 6, 10);
-        }
-        if (com.rightBottom) {
-            getVertexIbByFan(8, 11, 7);
-        }
-        return baseIbArr;
+        if (sprite.leftBottom)
+            fanIndexBuild(3, 4, 0);
+        if (sprite.leftTop)
+            fanIndexBuild(2, 1, 5);
+        if (sprite.rightTop)
+            fanIndexBuild(9, 6, 10);
+        if (sprite.rightBottom)
+            fanIndexBuild(8, 11, 7);
+        return indexBuffer
     },
 
     updateUVs(sprite: Sprite) {

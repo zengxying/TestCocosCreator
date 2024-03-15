@@ -1,5 +1,6 @@
 import { CCBoolean, CCFloat, CCInteger, Sprite ,SpriteFrame,_decorator} from "cc";
 import { roundboxAssemble } from "./RoundBoxAssembler";
+import { RoundBoxAssemblerSuper } from "./RoundBoxAssemblerSuper";
 const { ccclass, property } = _decorator;
 
 @ccclass("RoundBox")
@@ -78,7 +79,7 @@ export class RoundBox extends Sprite{
     }
 
     protected _flushAssembler(): void {
-        const assembler = roundboxAssemble;
+        const assembler = RoundBoxAssemblerSuper;
 
         if (this._assembler !== assembler) {
             this.destroyRenderData();
