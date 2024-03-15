@@ -22,42 +22,35 @@
  THE SOFTWARE.
 */
 
-
-import { IAssembler, Sprite, dynamicAtlasManager, IRenderData, RenderData, Vec2, v2 } from "cc";
+import { IAssembler, Sprite, dynamicAtlasManager, IRenderData, RenderData } from "cc";
 
 /**
  * @packageDocumentation
  * @module ui-assembler
  */
-let l = 0;
-let b = 0;
-let r = 0;
-let t = 0;
 
-const QUAD_INDICES = Uint16Array.from([0, 1, 2, 1, 3, 2, 3, 1, 4]);
+
+const QUAD_INDICES = Uint16Array.from([0, 1, 2, 1, 3, 2]);
 
 /**
  * simple 组装器
  * 可通过 `UI.simple` 获取该组装器。
  */
-export const elipse: IAssembler = {
-    createData(sprite: Sprite) {
+export const simpleTest: IAssembler = {
+    createData (sprite: Sprite) {
         const renderData = sprite.requestRenderData();
-        // 设置了五个顶点数据，内部会进行数组数据的初始化
-        renderData.dataLength = 5;
-        renderData.resize(5, 9);
-        // 这个只是适用于当前代码中可以直接删除
-        renderData.vertexRow = 3;
+        renderData.dataLength = 4;
+        renderData.resize(4, 6);
+        renderData.vertexRow = 2;
         renderData.vertexCol = 2;
-        // 原生用的用于设置顶点索引数据
         renderData.chunk.setIndexBuffer(QUAD_INDICES);
         return renderData;
     },
 
-    updateRenderData(sprite: Sprite) {
+    updateRenderData (sprite: Sprite) {
         const frame = sprite.spriteFrame;
 
-        // dynamicAtlasManager.packToDynamicAtlas(sprite, frame);
+        dynamicAtlasManager.packToDynamicAtlas(sprite, frame);
         this.updateUVs(sprite);// dirty need
         //this.updateColor(sprite);// dirty need
 
@@ -66,58 +59,36 @@ export const elipse: IAssembler = {
             if (renderData.vertDirty) {
                 this.updateVertexData(sprite);
             }
-            renderData.updateRenderData(sprite, frame); // 更新纹理缓冲区，可以不管
+            renderData.updateRenderData(sprite, frame);
         }
     },
 
-    updateWorldVerts(sprite: Sprite, chunk: any) {
+    updateWorldVerts (sprite: Sprite, chunk: any) {
         const renderData = sprite.renderData!;
         const vData = chunk.vb;
 
-        const dataList: any[] = [
-            { x: l, y: b },
-            { x: r/2, y: b },
-            { x: l, y: t },
-            { x: r/2, y: t/2 }, //
-            { x: r, y: t }, //
-        ];
-
-        console.log("单纯的替换了 数据，没有使用原来的数据格式 ")
+        const dataList: IRenderData[] = renderData.data;
         const node = sprite.node;
         const m = node.worldMatrix;
 
         const stride = renderData.floatStride;
         let offset = 0;
-        const length = renderData.dataLength; // 用于遍历设置顶点数据
+        const length = dataList.length;
         for (let i = 0; i < length; i++) {
             const curData = dataList[i];
             const x = curData.x;
             const y = curData.y;
             let rhw = m.m03 * x + m.m07 * y + m.m15;
-            rhw = rhw ? Math.abs(1 / rhw) : 1;
+            rhw = rhw ? 1 / rhw : 1;
 
             offset = i * stride;
             vData[offset + 0] = (m.m00 * x + m.m04 * y + m.m12) * rhw;
             vData[offset + 1] = (m.m01 * x + m.m05 * y + m.m13) * rhw;
             vData[offset + 2] = (m.m02 * x + m.m06 * y + m.m14) * rhw;
-
         }
-
-        // dataList[0].x = l;
-        // dataList[0].y = b;
-
-        // dataList[1].x = r;
-        // dataList[1].y = b;
-
-        // dataList[2].x = l;
-        // dataList[2].y = t;
-
-        // dataList[3].x = r;
-        // dataList[3].y = t;
     },
 
-    fillBuffers(sprite: Sprite, renderer: any) {
-        console.log("zou ni !!!");
+    fillBuffers (sprite: Sprite, renderer: any) {
         if (sprite === null) {
             return;
         }
@@ -134,7 +105,7 @@ export const elipse: IAssembler = {
         const bid = chunk.bufferId;
         const vidOrigin = chunk.vertexOffset;
         const meshBuffer = chunk.meshBuffer;
-        const ib = chunk.meshBuffer.iData; // 设置索引数据，哪些索引组成了一个面
+        const ib = chunk.meshBuffer.iData;
         let indexOffset = meshBuffer.indexOffset;
 
         // rect count = vertex count - 1
@@ -165,28 +136,22 @@ export const elipse: IAssembler = {
         // renderer.switchBufferAccessor().appendIndices(chunk);
     },
 
-
-    _getElipsePos(a: number, b: number, angle: number, out?: Vec2) {
-        angle = angle * Math.PI / 180;
-        var x = a * Math.cos(angle);
-        var y = b * Math.sin(angle);
-        out ||= v2();
-        out.set(x, y);
-        return out;
-    },
-
-    updateVertexData(sprite: Sprite) {
+    updateVertexData (sprite: Sprite) {
         const renderData: RenderData | null = sprite.renderData;
         if (!renderData) {
             return;
         }
 
         const uiTrans = sprite.node._uiProps.uiTransformComp!;
+        const dataList: IRenderData[] = renderData.data;
         const cw = uiTrans.width;
         const ch = uiTrans.height;
         const appX = uiTrans.anchorX * cw;
         const appY = uiTrans.anchorY * ch;
-
+        let l = 0;
+        let b = 0;
+        let r = 0;
+        let t = 0;
         if (sprite.trim) {
             l = -appX;
             b = -appY;
@@ -205,30 +170,38 @@ export const elipse: IAssembler = {
             r = cw + trimmedBorder.y * scaleX - appX;
             t = ch + trimmedBorder.w * scaleY - appY;
         }
-        // console.log("dataList: ", dataList)
+
+        dataList[0].x = l;
+        dataList[0].y = b;
+
+        dataList[1].x = r;
+        dataList[1].y = b;
+
+        dataList[2].x = l;
+        dataList[2].y = t;
+
+        dataList[3].x = r;
+        dataList[3].y = t;
+
         renderData.vertDirty = true;
     },
 
-    updateUVs(sprite: Sprite) {
+    updateUVs (sprite: Sprite) {
         if (!sprite.spriteFrame) return;
         const renderData = sprite.renderData!;
         const vData = renderData.chunk.vb;
         const uv = sprite.spriteFrame.uv;
-
-        console.log("uv: ", uv, "vData: ", vData.length)
-        vData[3] = 0;
-        vData[4] = 1;
-        vData[12] = 1;
-        vData[13] = 1;
-        vData[21] = 0;
-        vData[22] = 0;
-        vData[30] = 1;
-        vData[31] = 0;
-        vData[39] = 1;
-        vData[40] = 1;
+        vData[3] = uv[0];
+        vData[4] = uv[1];
+        vData[12] = uv[2];
+        vData[13] = uv[3];
+        vData[21] = uv[4];
+        vData[22] = uv[5];
+        vData[30] = uv[6];
+        vData[31] = uv[7];
     },
 
-    updateColor(sprite: Sprite) {
+    updateColor (sprite: Sprite) {
         const renderData = sprite.renderData!;
         const vData = renderData.chunk.vb;
         let colorOffset = 5;
@@ -237,8 +210,7 @@ export const elipse: IAssembler = {
         const colorG = color.g / 255;
         const colorB = color.b / 255;
         const colorA = color.a / 255;
-        const colorLen = renderData.dataLength;
-        for (let i = 0; i < colorLen; i++, colorOffset += renderData.floatStride) {
+        for (let i = 0; i < 4; i++, colorOffset += renderData.floatStride) {
             vData[colorOffset] = colorR;
             vData[colorOffset + 1] = colorG;
             vData[colorOffset + 2] = colorB;
