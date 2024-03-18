@@ -1,85 +1,90 @@
-import { CCBoolean, CCFloat, CCInteger, Sprite ,SpriteFrame,_decorator} from "cc";
+import { CCBoolean, CCFloat, CCInteger, Sprite, SpriteFrame, _decorator } from "cc";
 import { roundboxAssemble } from "./RoundBoxAssembler";
 import { RoundBoxAssemblerSuper } from "./RoundBoxAssemblerSuper";
 const { ccclass, property } = _decorator;
 
 @ccclass("RoundBox")
-export class RoundBox extends Sprite{
+export class RoundBox extends Sprite {
 
     @property({})
-    _leftTop:boolean = false;
-    @property({tooltip:"圆角的方向 left right top bottom"})
-    set leftTop(value:boolean){
+    _leftTop: boolean = false;
+    @property({ tooltip: "圆角的方向 left right top bottom" })
+    set leftTop(value: boolean) {
         this._leftTop = value;
-        this._updateVertexInfo();
+        this.resetAssembler();
     }
-    get leftTop():boolean{
+    get leftTop(): boolean {
         return this._leftTop;
     }
-    
+
     @property({})
-    _leftBottom:boolean = false;
-    @property({tooltip:"圆角的方向 left right top bottom"})
-    set leftBottom(value:boolean){
+    _leftBottom: boolean = false;
+    @property({ tooltip: "圆角的方向 left right top bottom" })
+    set leftBottom(value: boolean) {
         this._leftBottom = value;
-        this._updateVertexInfo();
+        this.resetAssembler();
     }
-    get leftBottom():boolean{
+    get leftBottom(): boolean {
         return this._leftBottom;
     }
-    
+
     @property({})
-    _rightTop:boolean = false;
-    @property({tooltip:"圆角的方向 left right top bottom"})
-    set rightTop(value:boolean){
+    _rightTop: boolean = false;
+    @property({ tooltip: "圆角的方向 left right top bottom" })
+    set rightTop(value: boolean) {
         this._rightTop = value;
-        this._updateVertexInfo();
+        this.resetAssembler();
     }
-    get rightTop():boolean{
+    get rightTop(): boolean {
         return this._rightTop;
     }
     @property({})
-    _rightBottom:boolean = false;
-    @property({tooltip:"圆角的方向 left right top bottom"})
-    set rightBottom(value:boolean){
+    _rightBottom: boolean = false;
+    @property({ tooltip: "圆角的方向 left right top bottom" })
+    set rightBottom(value: boolean) {
         this._rightBottom = value;
-        this._updateVertexInfo();
+        this.resetAssembler();
     }
-    get rightBottom():boolean{
+    get rightBottom(): boolean {
         return this._rightBottom;
     }
 
-    @property({type:CCInteger})
-    _segments:number = 0;
-    @property({type:CCInteger})
-    set segments(value:number){
+    @property({ type: CCInteger })
+    _segments: number = 0;
+    @property({ type: CCInteger })
+    set segments(value: number) {
         this._segments = value;
-        this._updateVertexInfo();
+        this._flushAssembler();
     }
-    get segments():number{
+    get segments(): number {
         return this._segments;
     }
-    @property({type:CCFloat})
-    _radius:number = 0;
-    @property({type:CCFloat})
-    set radius(value:number){
+    @property({ type: CCFloat })
+    _radius: number = 0;
+    @property({ type: CCFloat })
+    set radius(value: number) {
         this._radius = value;
         this._updateVertexInfo();
     }
-    get radius():number{
+    get radius(): number {
         return this._radius;
     }
 
 
-    private _updateVertexInfo(){
-        // if(this._assembler){
-        //     this._assembler.updateUVs(this);
-        //     this._assembler.updateVertexData(this)
-        // }
+    private _updateVertexInfo() {
+        if (this._assembler) {
+            this._assembler.updateUVs(this);
+        }
+        this.markForUpdateRenderData(true);
+    }
+
+    protected resetAssembler() {
+        this._assembler = null;
+        this._flushAssembler();
     }
 
     protected _flushAssembler(): void {
-        const assembler = RoundBoxAssemblerSuper;
+        const assembler = roundboxAssemble;
 
         if (this._assembler !== assembler) {
             this.destroyRenderData();
@@ -92,7 +97,7 @@ export class RoundBox extends Sprite{
                 this._renderData!.material = this.getRenderMaterial(0);
                 this.markForUpdateRenderData();
                 if (this.spriteFrame) {
-                    this._assembler.updateUVs(this);
+                    this._assembler.updateRenderData(this);
                 }
                 this._updateColor();
             }

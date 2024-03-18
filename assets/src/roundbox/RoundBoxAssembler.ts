@@ -236,7 +236,7 @@ export const roundboxAssemble: IAssembler = {
         let fanIndexBuild = function(center, start, end) {
             let last = start;
             for (let i = 0; i < sprite.segments - 1; i++) {
-                // 左上角 p2为扇形圆心，p1/p5为两个边界
+                // 左上角 p2为扇形圆心，p1/p5为两个边界      note 这里索引数据反了也会导致变形
                 let cur = index;
                 index++;
                 indexBuffer.push(center, last, cur);
@@ -277,7 +277,9 @@ export const roundboxAssemble: IAssembler = {
         const h_uv = Math.abs(b - t);
         for (let index = 0; index < renderData.dataLength; index++) {
             vData[index * renderData.floatStride + 3] = (dataList[index].x + appX) / cw * (w_uv) + l;
-            vData[index * renderData.floatStride + 4] = (dataList[index].y + appY) / ch * (h_uv) + b;
+
+            // opengl坐标系，y轴向下  和 webgl展示的效果不一致
+            vData[index * renderData.floatStride + 4] = 1 - ((dataList[index].y + appY) / ch * (h_uv) + b);
         }
     },
 
