@@ -1,0 +1,13 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "5dce3187-4f7f-4a16-b557-5ffcc1b64edb",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleName": "app-view_PopTip",
+    "bundleConfigID": "auto_f7NI9WxFVIO6e8LbJGF72k"
+  }
+}

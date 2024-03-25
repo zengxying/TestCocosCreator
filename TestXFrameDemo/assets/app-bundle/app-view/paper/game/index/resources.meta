@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "5be1fc41-8937-4a9a-8eb0-2d8bf8c01982",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "priority": 8,
+    "isBundle": true,
+    "bundleName": "app-view_PaperGameIndex_Res",
+    "bundleConfigID": "auto_11aBEBWDxI/6ryvKvFthEo"
+  }
+}

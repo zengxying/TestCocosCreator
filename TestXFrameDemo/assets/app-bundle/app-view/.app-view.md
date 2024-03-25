@@ -1,0 +1,3 @@
+存储UI资源的文件夹
+1、通过app.manager.ui管理
+2、通过菜单「App/创建/View」创建

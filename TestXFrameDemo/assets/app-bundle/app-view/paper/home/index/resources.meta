@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "cbffdfa4-4d31-4dad-b27c-8bdcedd7649c",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "priority": 8,
+    "isBundle": true,
+    "bundleName": "app-view_PaperHomeIndex_Res",
+    "bundleConfigID": "auto_11aBEBWDxI/6ryvKvFthEo"
+  }
+}

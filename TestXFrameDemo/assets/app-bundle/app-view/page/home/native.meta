@@ -1,0 +1,13 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "56dd8519-403f-43e0-84e7-c58e029871f1",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleName": "app-view_PageHome",
+    "bundleConfigID": "auto_f7NI9WxFVIO6e8LbJGF72k"
+  }
+}

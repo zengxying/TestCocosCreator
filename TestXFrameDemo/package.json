@@ -1,0 +1,22 @@
+{
+  "creator": {
+    "version": "3.8.0"
+  },
+  "name": "cocos-creator-3",
+  "uuid": "ab72af5f-29c4-446f-8911-e4a0a6e3b139",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0"
+  },
+  "scripts": {
+    "upgrade": "npx --registry=https://registry.npmjs.org @gamex/cc-cli@latest upgrade 此命令用于升级框架",
+    "package": "npx --registry=https://registry.npmjs.org @gamex/cc-cli@latest package 此命令用于管理扩展",
+    "app:build": "npm run --prefix ./extensions/app build",
+    "app:watch": "npm run --prefix ./extensions/app watch",
+    "pkg:add": "npm run --prefix ./extensions/pkg add",
+    "pkg:remove": "npm run --prefix ./extensions/pkg remove",
+    "pkg:update": "npm run --prefix ./extensions/pkg update"
+  }
+}
